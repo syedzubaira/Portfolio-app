@@ -1,6 +1,8 @@
 import React from 'react';
 import syed from "../assets/syed.jpg";
 import Text from './Text';
+import SYED from "../assets/../assets/zubair.pdf"
+// import chatImg from "../../assets/chat-app.jpeg"
 
 const Home = () => {
   return (
@@ -14,14 +16,23 @@ const Home = () => {
           Innovative and details-oriented frontend developer passionate about creating user-centric web applications,
           Proficient in modern web technologies and frameworks.with exprience in delivering responsive and dynamic solutions through collaborative teamwork.
         </p>
-
+        
+        <a href='tel:9513208384'>
         <button className='mt-5 md:md-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]'>
           Contact Me
           </button>
+        </a>
+        
 
-          <button className="bg-[#465697] hover:bg-gray-800 text-white font-semibold py-2 px-10 rounded-lg shadow-lg transition">
+          <a href={SYED}
+           target='_blank'
+           rel="noopener noreferrer"
+          >
+             <button className="bg-[#465697] hover:bg-gray-800 text-white font-semibold py-2 px-10 rounded-lg shadow-lg transition">
             Download CV
           </button>
+          </a> 
+         
       </div>
         <div className='md:w-1/2 mt-6 md:mt-0 md:text-left' >
           <img className='rounded-full shadow-2xl px-5 py-10 border-4 border-white overflow-hidden inline-block' src={syed} alt="" width={400}/>
